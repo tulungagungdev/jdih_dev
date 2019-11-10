@@ -1,0 +1,233 @@
+  /*
+ * RFVenom Core - Style
+ * @version: 1.1.2 (18 Jul 2019 -- Update -- 9 Aug 2019)
+ * @requires: Bootstrap v 4.1 or later
+ * @author RFVenom Design SIAT Dev (Ryan Fitra -- RFV --)
+ * @email: ryan.fitra@gmail.com
+ *
+ * Copyright TIM SIAT Dev. 2019 RFV Design.
+ *
+ */
+ .svg-preloader
+ {
+    z-index:-1;
+    background:transparent url(../images/preloader.svg) center no-repeat!important;
+    overflow:hidden;
+    transition:all .4s ease-in;
+}
+
+.svg-preloader :not(.rf-icon):not(.btn):not(.rf-media-player):not(.rf-media-player__icon):not(.rf-label)
+{
+    opacity:0;transition:opacity .4s ease-in
+}
+
+body.preloader-site
+{
+    overflow:hidden
+}
+
+.preloader-wrapper
+{
+    height:100%;
+    width:100%;
+    background:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999999
+}
+
+.preloader-wrapper.dark-bg
+{
+    background:#333
+}
+
+.preloader-wrapper.dark-bg-transparent
+{
+    background:rgba(0,0,0,.8)
+}
+
+.preloader-wrapper .preloader
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    width:15px
+}
+
+.preloader-wrapper.app .preloader
+{
+    top:50%;
+    left:50%;
+    width:100px
+}
+
+.preloader-wrapper .preloader .text-loader
+{
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%)
+}
+
+.preloader-wrapper.dark-bg .preloader .text-loader,.preloader-wrapper.dark-bg-transparent .preloader .text-loader{
+    color:#fff
+}
+
+.preloader-wrapper .preloader .img-preloader
+{
+    background-image:url(../images/preloader.svg);
+    background-repeat:no-repeat;
+    width:128px;
+    height:128px
+}
+
+.preloader-wrapper.dark-bg .preloader .img-preloader,.preloader-wrapper.dark-bg-transparent .preloader .img-preloader
+{
+    background-image:url(../../images/rf-component/pageloader-dark.html)
+}
+
+.preloader-wrapper .site-img
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    width:300px;
+    margin-bottom:15%
+}
+
+.transition-3d-hover
+{
+    transition:all .2s ease-in-out
+}
+
+.transition-3d-hover:focus,.transition-3d-hover:hover
+{
+    -webkit-transform:translateY(-3px);
+    transform:translateY(-3px)
+}
+
+.rf-go-to
+{
+    display:none;
+    position:relative;
+    z-index:100;
+    width:2.5rem;
+    height:2.5rem;
+    background-color:#6e6e6e;
+    color:#fff;
+    font-size:.75rem;
+    border-radius:.3125rem;
+    opacity:.5;
+    transition:.3s ease-out
+}
+
+.rf-go-to__inner{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%)
+}
+
+.rf-go-to:focus:hover,.rf-go-to:hover
+{
+    color:#fff;
+    opacity:1
+}
+
+.rf-go-to-ver-arrow
+{
+    display:inline-block;
+    color:#6e6e6e;
+    background-color:rgba(114,192,44,.1);
+    padding:2rem 1rem;
+    border-radius:6.1875rem
+}
+
+.rf-go-to-ver-arrow:hover .rf-go-to-ver-arrow__inner
+{
+    -webkit-transform:translateY(3px);
+    transform:translateY(3px)
+}
+
+.rf-go-to-ver-arrow__inner
+{
+    transition:.2s ease-in-out
+}
+
+.rf-go-to-modern
+{
+    position:relative;
+    z-index:2;
+    display:inline-block;
+    vertical-align:middle;
+    text-align:center;
+    width:3.5rem;
+    height:3.5rem;
+    font-size:1.125rem;
+    color:#6e6e6e;
+    background-color:#fff;
+    border-radius:50%;
+    box-shadow:0 0 1.25rem rgba(140,152,164,.2)
+}
+
+.rf-go-to-modern .rf-go-to-modern__inner
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%)
+}
+
+.rf-go-to-wave
+{
+    width:13.125rem;
+    margin-left:auto;
+    margin-right:auto
+}
+
+@media (max-width:575.98px){
+    .rf-go-to-wave
+    {
+        width:10rem
+    }
+}
+
+.rf-go-to-wave__icon
+{
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+}
+
+.z-index-n1
+{
+    z-index:-1
+}
+
+.z-index-2
+{
+    z-index:2
+}
+
+.z-index-4{
+    z-index:4
+}
+
+.rf-cursor-pointer{
+    cursor:pointer
+}
+
+figure
+{
+    margin-bottom:0
+}
+
+@media (max-width:768px){
+    .preloader-wrapper .preloader{
+        left:50%
+    }
+}
