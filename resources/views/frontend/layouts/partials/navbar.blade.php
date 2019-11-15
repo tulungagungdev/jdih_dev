@@ -8,6 +8,7 @@
                 <li> <a class="dropdown-item" href="{{ route('frontend.pages.strukturOrganisasi') }}">Struktur Organisasi</a> </li>
                 </ul>
             </li>
+            <li class="nav-item"> <a href="{{ route('frontend.pages.produkHukum') }}" class="nav-link">Produk Hukum</a> </li>
         </ul>
     </div>
 </nav>

@@ -16,5 +16,6 @@ Route::get('/', 'Frontend\HomeController@index')->name('frontend.home.index');
 
 // Route Halaman
 Route::group(['prefix' => 'page'], function () {
-    Route::get('struktur-organisasi', 'Frontend\PagesController@strukturOrganisasi')->name('frontend.pages.strukturOrganisasi');
+    Route::get('struktur-organisasi', 'Frontend\PagesController@strukturOrganisasiView')->name('frontend.pages.strukturOrganisasi');
+    Route::get('dih', 'Frontend\PagesController@produkHukum')->name('frontend.pages.produkHukum');
 });
